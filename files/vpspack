@@ -2257,13 +2257,13 @@ echo -e "${GRAY}[${RED}-${GRAY}]${CYAN} ─────────────�
 cargarmodulos
 echo -e "${GRAY}[${RED}-${GRAY}]${CYAN} ───────────────── /// ────────────────── "
 echo -e "${WHITE} › Usuarios En Linea:${CYAN} $_onlin ${WHITE}› Cuentas:${CYAN} $_tuser "
-echo -e "${YELLOW}[${CYAN}1${YELLOW}]  ${RED}› ${WHITE}USUARIOS          ${YELLOW}[${CYAN}2${YELLOW}] ${RED} › ${WHITE}BANNER 
-${YELLOW}[${CYAN}3${YELLOW}]  ${RED}› ${WHITE}SPEEDTEST         ${YELLOW}[${CYAN}4${YELLOW}] ${RED} › ${WHITE}SISTEMA
-${YELLOW}[${CYAN}5${YELLOW}]  ${RED}› ${WHITE}FIREWALL ON       ${YELLOW}[${CYAN}6${YELLOW}] ${RED} › ${WHITE}FIREWALL OFF
-${YELLOW}[${CYAN}7${YELLOW}]  ${RED}› ${WHITE}PUERTOS TCP/IP    ${YELLOW}[${CYAN}7${YELLOW}] ${RED} › ${WHITE}HERRAMIENTAS
-${YELLOW}[${CYAN}9${YELLOW}]  ${RED}› ${WHITE}INSTALADORES      ${YELLOW}[${CYAN}9${YELLOW}] ${RED} › ${WHITE}DESINSTALADORES
-${YELLOW}[${CYAN}11${YELLOW}] ${RED}› ${WHITE}MODIFICAR PUERTOS ${YELLOW}[${CYAN}10${YELLOW}] ${RED}› ${WHITE}CONFIGURACIONES  
-${YELLOW}[${CYAN}100${YELLOW}]${RED}› ${WHITE}DESINSTALAR      ${YELLOW}[${CYAN}0${YELLOW}] ${RED}› ${WHITE}SALIR
+echo -e "${RED}[${CYAN}1${RED}]  ${RED}› ${WHITE}USUARIOS          ${RED}[${CYAN}2${RED}] ${RED} › ${WHITE}BANNER 
+${RED}[${CYAN}3${RED}]  ${RED}› ${WHITE}SPEEDTEST         ${RED}[${CYAN}4${RED}] ${RED} › ${WHITE}SISTEMA
+${RED}[${CYAN}5${RED}]  ${RED}› ${WHITE}FIREWALL ON       ${RED}[${CYAN}6${RED}] ${RED} › ${WHITE}FIREWALL OFF
+${RED}[${CYAN}7${RED}]  ${RED}› ${WHITE}PUERTOS TCP/IP    ${RED}[${CYAN}7${RED}] ${RED} › ${WHITE}HERRAMIENTAS
+${RED}[${CYAN}9${RED}]  ${RED}› ${WHITE}INSTALADORES      ${RED}[${CYAN}9${RED}] ${RED} › ${WHITE}DESINSTALADORES
+${RED}[${CYAN}11${RED}] ${RED}› ${WHITE}MODIFICAR PUERTOS ${RED}[${CYAN}10${RED}] ${RED}› ${WHITE}CONFIGURACIONES  
+${RED}[${CYAN}100${RED}]${RED}› ${WHITE}DESINSTALAR      ${RED}[${CYAN}0${RED}] ${RED}› ${WHITE}SALIR
 ${GRAY}[${RED}-${GRAY}]${CYAN} ───────────────── /// ──────────────────"
 echo -e "\033[1;30m      Δ ESCRIBA UNA OPCION:      \033[0m"
 read -p " : " opcao
