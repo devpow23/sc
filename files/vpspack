@@ -2243,7 +2243,7 @@ if [[ $1 == "" ]]
 then
 clear && printf '\e[3J'
 echo -e "${GRAY}[${RED}-${GRAY}]${CYAN} ───────────────── /// ────────────────── "
-toilet -f future PROMINEX
+toilet  -f future --filter border:metal [  .         PROMINEX         .  ]
 echo -e "${GRAY}[${RED}-${GRAY}]${CYAN} ───────────────── /// ────────────────── "
 echo -e "${WHITE} 【                PROMINEX                 】 "
 echo -e "${YELLOW} › ${WHITE}Linux Dist:${GREEN} $distribution "
@@ -2261,7 +2261,7 @@ echo -e "${YELLOW}[${GREEN}1${YELLOW}]  ${RED}› ${WHITE}USUARIOS          ${YE
 ${YELLOW}[${GREEN}3${YELLOW}]  ${RED}› ${WHITE}SPEEDTEST         ${YELLOW}[${GREEN}4${YELLOW}] ${RED} › ${WHITE}SISTEMA
 ${YELLOW}[${GREEN}5${YELLOW}]  ${RED}› ${WHITE}FIREWALL ON       ${YELLOW}[${GREEN}6${YELLOW}] ${RED} › ${WHITE}FIREWALL OFF
 ${YELLOW}[${GREEN}7${YELLOW}]  ${RED}› ${WHITE}PUERTOS TCP/IP    ${YELLOW}[${GREEN}7${YELLOW}] ${RED} › ${WHITE}HERRAMIENTAS
-${YELLOW}[${GREEN}9${YELLOW}]  ${RED}› ${WHITE}INSTALADORES      ${YELLOW}[${GREEN}9${YELLOW}] ${RED}› ${WHITE}DESINSTALADORES
+${YELLOW}[${GREEN}9${YELLOW}]  ${RED}› ${WHITE}INSTALADORES      ${YELLOW}[${GREEN}9${YELLOW}] ${RED} › ${WHITE}DESINSTALADORES
 ${YELLOW}[${GREEN}11${YELLOW}] ${RED}› ${WHITE}MODIFICAR PUERTOS ${YELLOW}[${GREEN}10${YELLOW}] ${RED}› ${WHITE}CONFIGURACIONES  
 ${YELLOW}[${GREEN}100${YELLOW}]${RED}› ${WHITE}DESINSTALAR      ${YELLOW}[${GREEN}0${YELLOW}] ${RED}› ${WHITE}SALIR
 ${GRAY}[${RED}-${GRAY}]${CYAN} ───────────────── /// ──────────────────"
