@@ -2246,26 +2246,26 @@ echo -e "${GRAY}[${RED}-${GRAY}]${CYAN} ─────────────�
 toilet  -f future --filter border:metal [  .         PROMINEX         .  ]
 echo -e "${GRAY}[${RED}-${GRAY}]${CYAN} ───────────────── /// ────────────────── "
 echo -e "${WHITE} 【                PROMINEX                 】 "
-echo -e "${YELLOW} › ${WHITE}Linux Dist:${GREEN} $distribution "
-echo -e "${YELLOW} › ${WHITE}IP Publica VPS:${GREEN} $ip "
-echo -e "${YELLOW} › ${WHITE}Hostname VPS:${GREEN} $host "
-echo -e "${YELLOW} › ${WHITE}M:${YELLOW} $memoriatotal${WHITE} MB ›Uso:${YELLOW} $memoriauso${WHITE} MB ›Libre:${GREEN} $memorialibre ${WHITE}MB "
+echo -e "${YELLOW} › ${WHITE}Linux Dist:${CYAN} $distribution "
+echo -e "${YELLOW} › ${WHITE}IP Publica VPS:${CYAN} $ip "
+echo -e "${YELLOW} › ${WHITE}Hostname VPS:${CYAN} $host "
+echo -e "${YELLOW} › ${WHITE}M:${YELLOW} $memoriatotal${WHITE} MB ›Uso:${YELLOW} $memoriauso${WHITE} MB ›Libre:${CYAN} $memorialibre ${WHITE}MB "
 echo -e "${YELLOW} › ${WHITE}P:${WHITE} $processor "
-echo -e "${YELLOW} › ${WHITE}Datos: ${GREEN}$rx_gb${WHITE} GB Recibidos | ${GREEN}$tx_gb${WHITE} GB Enviados "
-echo -e "${GRAY}[${RED}-${GRAY}]${RED} ${GREEN}${consumohoy} ${WHITE}MB Consumidos Hoy"
+echo -e "${YELLOW} › ${WHITE}Datos: ${CYAN}$rx_gb${WHITE} GB Recibidos | ${CYAN}$tx_gb${WHITE} GB Enviados "
+echo -e "${GRAY}[${RED}-${GRAY}]${RED} ${CYAN}${consumohoy} ${WHITE}MB Consumidos Hoy"
 echo -e "${GRAY}[${RED}-${GRAY}]${CYAN} ───────────────── /// ────────────────── "
 cargarmodulos
 echo -e "${GRAY}[${RED}-${GRAY}]${CYAN} ───────────────── /// ────────────────── "
-echo -e "${WHITE} › Usuarios En Linea:${GREEN} $_onlin ${WHITE}› Cuentas:${GREEN} $_tuser "
-echo -e "${YELLOW}[${GREEN}1${YELLOW}]  ${RED}› ${WHITE}USUARIOS          ${YELLOW}[${GREEN}2${YELLOW}] ${RED} › ${WHITE}BANNER 
-${YELLOW}[${GREEN}3${YELLOW}]  ${RED}› ${WHITE}SPEEDTEST         ${YELLOW}[${GREEN}4${YELLOW}] ${RED} › ${WHITE}SISTEMA
-${YELLOW}[${GREEN}5${YELLOW}]  ${RED}› ${WHITE}FIREWALL ON       ${YELLOW}[${GREEN}6${YELLOW}] ${RED} › ${WHITE}FIREWALL OFF
-${YELLOW}[${GREEN}7${YELLOW}]  ${RED}› ${WHITE}PUERTOS TCP/IP    ${YELLOW}[${GREEN}7${YELLOW}] ${RED} › ${WHITE}HERRAMIENTAS
-${YELLOW}[${GREEN}9${YELLOW}]  ${RED}› ${WHITE}INSTALADORES      ${YELLOW}[${GREEN}9${YELLOW}] ${RED} › ${WHITE}DESINSTALADORES
-${YELLOW}[${GREEN}11${YELLOW}] ${RED}› ${WHITE}MODIFICAR PUERTOS ${YELLOW}[${GREEN}10${YELLOW}] ${RED}› ${WHITE}CONFIGURACIONES  
-${YELLOW}[${GREEN}100${YELLOW}]${RED}› ${WHITE}DESINSTALAR      ${YELLOW}[${GREEN}0${YELLOW}] ${RED}› ${WHITE}SALIR
+echo -e "${WHITE} › Usuarios En Linea:${CYAN} $_onlin ${WHITE}› Cuentas:${CYAN} $_tuser "
+echo -e "${YELLOW}[${CYAN}1${YELLOW}]  ${RED}› ${WHITE}USUARIOS          ${YELLOW}[${CYAN}2${YELLOW}] ${RED} › ${WHITE}BANNER 
+${YELLOW}[${CYAN}3${YELLOW}]  ${RED}› ${WHITE}SPEEDTEST         ${YELLOW}[${CYAN}4${YELLOW}] ${RED} › ${WHITE}SISTEMA
+${YELLOW}[${CYAN}5${YELLOW}]  ${RED}› ${WHITE}FIREWALL ON       ${YELLOW}[${CYAN}6${YELLOW}] ${RED} › ${WHITE}FIREWALL OFF
+${YELLOW}[${CYAN}7${YELLOW}]  ${RED}› ${WHITE}PUERTOS TCP/IP    ${YELLOW}[${CYAN}7${YELLOW}] ${RED} › ${WHITE}HERRAMIENTAS
+${YELLOW}[${CYAN}9${YELLOW}]  ${RED}› ${WHITE}INSTALADORES      ${YELLOW}[${CYAN}9${YELLOW}] ${RED} › ${WHITE}DESINSTALADORES
+${YELLOW}[${CYAN}11${YELLOW}] ${RED}› ${WHITE}MODIFICAR PUERTOS ${YELLOW}[${CYAN}10${YELLOW}] ${RED}› ${WHITE}CONFIGURACIONES  
+${YELLOW}[${CYAN}100${YELLOW}]${RED}› ${WHITE}DESINSTALAR      ${YELLOW}[${CYAN}0${YELLOW}] ${RED}› ${WHITE}SALIR
 ${GRAY}[${RED}-${GRAY}]${CYAN} ───────────────── /// ──────────────────"
-echo -e "\033[1;33m      Δ ESCRIBA UNA OPCION:      \033[0m"
+echo -e "\033[1;30m      Δ ESCRIBA UNA OPCION:      \033[0m"
 read -p " : " opcao
 tput cuu1 >&2 && tput dl1 >&2
 else
