@@ -115,7 +115,7 @@ reboot
 }
 function crearusuario(){
 clear
-figlet -p -f slant < /root/name
+toilet  -f future --filter border:metal [  .         PROMINEX         .  ]
 echo -e "\033[1;37m      【     PROMINEX     】\033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;32m ───────────────── /// ─────────────────\033[1;33m"
 echo -e "Crear Nuevo Usuario"
@@ -126,7 +126,7 @@ vpspack 8
 }
 function sistemadetalhes(){
 clear
-figlet -p -f slant < /root/name
+toilet  -f future --filter border:metal [  .         PROMINEX         .  ]
 echo -e "\033[1;37m      【     PROMINEX     】\033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;32m ───────────────── /// ─────────────────\033[1;33m"
 echo -e "\033[1;37m ∆ Linux Dist:	$distribution › Version: $os_version\033[0m"
@@ -159,7 +159,7 @@ echo -e "\033[1;32mLibre: \033[0m$(free -m |grep -i swap |awk {'print $4'}) MB |
 }
 function monitorar(){
 clear
-figlet -p -f slant < /root/name
+toilet  -f future --filter border:metal [  .         PROMINEX         .  ]
 echo -e "\033[1;37m      【     PROMINEX     】\033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;32m ───────────────── /// ─────────────────\033[1;33m"
 echo -e "\033[1;37m › Linux Dist:	$distribution › Version: $os_version\033[0m"
@@ -333,7 +333,7 @@ vpspack
 }
 function puertos(){
 clear
-figlet -p -f slant < /root/name
+toilet  -f future --filter border:metal [  .         PROMINEX         .  ]
 echo -e "\033[1;37m      【     PROMINEX     】\033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;32m ───────────────── /// ─────────────────\033[1;33m"
 echo -e "\033[1;37m › Linux Dist:	$distribution › Version: $os_version\033[0m"
@@ -346,7 +346,7 @@ netstat -tulpn | awk -vOFS='\t' '/^tcp/{print $4,$7} /^udp/{print $4,$6}' | grep
 }
 function dnshost(){
 clear
-figlet -p -f slant < /root/name
+toilet  -f future --filter border:metal [  .         PROMINEX         .  ]
 echo -e "\033[1;37m      【     PROMINEX     】\033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;32m ───────────────── /// ─────────────────\033[1;33m"
 echo -e "\033[1;37m › Linux Dist:	$distribution › Version: $os_version\033[0m"
@@ -400,7 +400,10 @@ function herramientas(){
 clear
 if [[ $1 == "" ]]
 then
-figlet -p -f slant < /root/name
+clear && printf '\e[3J'
+echo -e "${GRAY}[${RED}-${GRAY}]${CYAN} ───────────────── /// ────────────────── "
+toilet  -f future --filter border:metal [  .         PROMINEX         .  ]
+echo -e "${GRAY}[${RED}-${GRAY}]${CYAN} ───────────────── /// ────────────────── "
 echo -e "\033[1;37m      【     PROMINEX     】\033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;32m ───────────────── /// ─────────────────\033[1;33m"
 echo -e "\033[1;37m › Linux Dist: $distribution › Version: $os_version\033[0m"
@@ -520,7 +523,7 @@ function fixsources(){
 clear
 if [[ $1 == "" ]]
 then
-figlet -p -f slant < /root/name
+toilet  -f future --filter border:metal [  .         PROMINEX         .  ]
 echo -e "\033[1;37m      【     PROMINEX     】\033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;30m ───────────────── /// ─────────────────\033[1;33m"
 echo -e "\033[1;37m › Linux Dist:	$distribution › Version: $os_version\033[0m"
@@ -584,7 +587,7 @@ function pythonproxy(){
 clear
 if [[ $1 == "" ]]
 then
-figlet -p -f slant < /root/name
+toilet  -f future --filter border:metal [  .         PROMINEX         .  ]
 echo -e "\033[1;37m      【     PROMINEX     】\033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;32m ───────────────── /// ─────────────────\033[1;33m"
 echo -e "\033[1;37m › Linux Dist:	$distribution › Version: $os_version\033[0m"
@@ -948,7 +951,7 @@ function multi(){
 clear
 if [[ $1 == "" ]]
 then
-figlet -p -f slant < /root/name
+toilet  -f future --filter border:metal [  .         PROMINEX         .  ]
 echo -e "\033[1;37m      【     PROMINEX     】\033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;32m ───────────────── /// ─────────────────\033[1;33m"
 echo -e "\033[1;37m › Linux Dist:	$distribution › Version: $os_version\033[0m"
@@ -1030,7 +1033,7 @@ echo -e "Preparando Servicios"
 apt-get remove sslh -y 1> /dev/null 2> /dev/null
 apt-get purge sslh -y 1> /dev/null 2> /dev/null
 clear
-figlet -p -f slant < /root/name
+toilet  -f future --filter border:metal [  .         PROMINEX         .  ]
 echo -e "\033[1;37m      【     PROMINEX     】\033[0m"
 echo -e "Instalando MultiPort"
 echo -e ""
@@ -1119,7 +1122,7 @@ function redireccionadoresssl(){
 clear
 if [[ $1 == "" ]]
 then
-figlet -p -f slant < /root/name
+toilet  -f future --filter border:metal [  .         PROMINEX         .  ]
 echo -e "\033[1;37m      【     PROMINEX     】\033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;32m ───────────────── /// ─────────────────\033[1;33m"
 echo -e "\033[1;37m › Linux Dist:	$distribution › Version: $os_version\033[0m"
@@ -1236,7 +1239,7 @@ function monitores(){
 clear
 if [[ $1 == "" ]]
 then
-figlet -p -f slant < /root/name
+toilet  -f future --filter border:metal [  .         PROMINEX         .  ]
 echo -e "\033[1;37m      【     PROMINEX     】\033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;32m ───────────────── /// ─────────────────\033[1;33m"
 echo -e "\033[1;37m › Linux Dist:	$distribution › Version: $os_version\033[0m"
@@ -1262,7 +1265,7 @@ function administradorprocesos(){
 clear
 if [[ $1 == "" ]]
 then
-figlet -p -f slant < /root/name
+toilet  -f future --filter border:metal [  .         PROMINEX         .  ]
 echo -e "\033[1;37m      【     PROMINEX     】\033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;32m ───────────────── /// ─────────────────\033[1;33m"
 echo -e "\033[1;37m › Linux Dist:	$distribution › Version: $os_version\033[0m"
@@ -1291,7 +1294,7 @@ function encender(){
 clear
 if [[ $1 == "" ]]
 then
-figlet -p -f slant < /root/name
+toilet  -f future --filter border:metal [  .         PROMINEX         .  ]
 echo -e "\033[1;37m      【     PROMINEX     】\033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;32m ───────────────── /// ─────────────────\033[1;33m"
 echo -e "\033[1;37m › Linux Dist:	$distribution › Version: $os_version\033[0m"
@@ -1375,7 +1378,7 @@ function detener(){
 clear
 if [[ $1 == "" ]]
 then
-figlet -p -f slant < /root/name
+toilet  -f future --filter border:metal [  .         PROMINEX         .  ]
 echo -e "\033[1;37m      【     PROMINEX     】\033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;32m ───────────────── /// ─────────────────\033[1;33m"
 echo -e "\033[1;37m › Linux Dist:	$distribution › Version: $os_version\033[0m"
@@ -1462,7 +1465,7 @@ function addport(){
 clear
 if [[ $1 == "" ]]
 then
-figlet -p -f slant < /root/name
+toilet  -f future --filter border:metal [  .         PROMINEX         .  ]
 echo -e "\033[1;37m      【     PROMINEX     】\033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;32m ───────────────── /// ─────────────────\033[1;33m"
 echo -e "\033[1;37m › Linux Dist:	$distribution › Version: $os_version\033[0m"
@@ -1576,7 +1579,7 @@ function gestionusuarios(){
 clear
 if [[ $1 == "" ]]
 then
-figlet -p -f slant < /root/name
+toilet  -f future --filter border:metal [  .         PROMINEX         .  ]
 echo -e "\033[1;37m      【     PROMINEX     】\033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;31m ───────────────── /// ─────────────────\033[1;33m"
 echo -e "\033[1;37m › Linux Dist:	$distribution › Version: $os_version\033[0m"
@@ -1656,7 +1659,7 @@ case $opcao in
 }
 function usuariotoken(){
 clear
-figlet -p -f slant < /root/name
+toilet  -f future --filter border:metal [  .         PROMINEX         .  ]
 echo -e "\033[1;37m      【     PROMINEX     】\033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;32m ───────────────── /// ─────────────────\033[1;33m"
 echo -e "Crear Nuevo Usuario con TOKEN / HWID"
@@ -1731,7 +1734,7 @@ function delpaq(){
 clear
 if [[ $1 == "" ]]
 then
-figlet -p -f slant < /root/name
+toilet  -f future --filter border:metal [  .         PROMINEX         .  ]
 echo -e "\033[1;37m      【     PROMINEX     】\033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;32m ───────────────── /// ─────────────────\033[1;33m"
 echo -e "\033[1;37m › Linux Dist:	$distribution › Version: $os_version\033[0m"
@@ -1925,7 +1928,7 @@ function config(){
 clear
 if [[ $1 == "" ]]
 then
-figlet -p -f slant < /root/name
+toilet  -f future --filter border:metal [  .         PROMINEX         .  ]
 echo -e "\033[1;37m      【     PROMINEX     】\033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;32m ───────────────── /// ─────────────────\033[1;33m"
 echo -e "\033[1;37m › Linux Dist:	$distribution › Version: $os_version\033[0m"
@@ -2063,7 +2066,7 @@ echo -e "[\033[1;31m-\033[1;33m]\033[1;32m ────────────�
 }
 function detalhes_usuarios(){
 clear
-figlet -p -f slant < /root/name
+toilet  -f future --filter border:metal [  .         PROMINEX         .  ]
 echo -e "\033[1;37m      【     PROMINEX     】\033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;32m ───────────────── /// ─────────────────\033[1;33m"
 echo -e "\033[1;37m › Linux Dist:	$distribution › Version: $os_version\033[0m"
@@ -2265,7 +2268,7 @@ ${RED}[${CYAN}9${RED}]  ${RED}› ${WHITE}INSTALADORES      ${RED}[${CYAN}9${RED
 ${RED}[${CYAN}11${RED}] ${RED}› ${WHITE}MODIFICAR PUERTOS ${RED}[${CYAN}10${RED}] ${RED}› ${WHITE}CONFIGURACIONES  
 ${RED}[${CYAN}100${RED}]${RED}› ${WHITE}DESINSTALAR      ${RED}[${CYAN}0${RED}] ${RED}› ${WHITE}SALIR
 ${GRAY}[${RED}-${GRAY}]${CYAN} ───────────────── /// ──────────────────"
-echo -e "\033[1;30m      Δ ESCRIBA UNA OPCION:      \033[0m"
+echo -e "\033[0;37m      Δ ESCRIBA UNA OPCION:      \033[0m"
 read -p " : " opcao
 tput cuu1 >&2 && tput dl1 >&2
 else
