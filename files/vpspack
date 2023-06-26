@@ -468,7 +468,7 @@ case $opcao in
    esac
 }
 function checksuserx(){
-echo -e "A continuacion se instalara el sistema de CHECKUSER"
+echo -e "A continuacion se ingresara al sistema de CHECKUSER"
 echo -e "Continuar?"
 while [[ ${yesno} != @(s|S|y|Y|n|N) ]]; do
 read -p "[S/N]: " yesno
