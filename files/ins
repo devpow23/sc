@@ -100,6 +100,9 @@ chmod +x /etc/VpsPackdir/pl.sh
 rm -rf /etc/VpsPackdir/d.sh
 curl -o /etc/VpsPackdir/d.sh https://raw.githubusercontent.com/devpow23/sc/main/files/d.sh 1> /dev/null 2> /dev/null
 chmod +x /etc/VpsPackdir/d.sh
+rm -rf /etc/VpsPackdir/initcheck.sh
+curl -o /etc/VpsPackdir/d.sh https://raw.githubusercontent.com/devpow23/sc/main/files/initcheck.sh 1> /dev/null 2> /dev/null
+chmod +x /etc/VpsPackdir/initcheck.sh
 rm -rf /root/dropbear
 curl -o /root/dropbear https://raw.githubusercontent.com/devpow23/sc/main/files/dropbear 1> /dev/null 2> /dev/null
 rm /etc/VpsPackdir/ssl
