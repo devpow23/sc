@@ -124,7 +124,7 @@ function udphttpcustom(){
 clear
 if [[ $1 == "" ]]
 then
-figlet -p -f slant < /root/name
+toilet  -f future --filter border:metal [  .         PROMINEX         .  ]
 echo -e "\033[1;37m      【     PROMINEX     】\033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;31m ───────────────────────────────────────\033[1;33m"
 echo -e "\033[1;37m › Linux Dist:	$distribution › Version: $os_version\033[0m"
@@ -312,7 +312,7 @@ function psix(){
 clear
 if [[ $1 == "" ]]
 then
-figlet -p -f slant < /root/name
+toilet  -f future --filter border:metal [  .         PROMINEX         .  ]
 echo -e "\033[1;37m      【     PROMINEX     】\033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;31m ───────────────────────────────────────\033[1;33m"
 echo -e "\033[1;37m › Linux Dist:	$distribution › Version: $os_version\033[0m"
@@ -576,7 +576,7 @@ function estadisticas(){
 clear
 if [[ $1 == "" ]]
 then
-figlet -p -f slant < /root/name
+toilet  -f future --filter border:metal [  .         PROMINEX         .  ]
 echo -e "\033[1;37m      【     PROMINEX     】\033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;31m ───────────────────────────────────────\033[1;33m"
 echo -e "\033[1;37m › Linux Dist:	$distribution › Version: $os_version\033[0m"
@@ -698,7 +698,7 @@ function installdropbear(){
 clear
 if [[ $1 == "" ]]
 then
-figlet -p -f slant < /root/name
+toilet  -f future --filter border:metal [  .         PROMINEX         .  ]
 echo -e "\033[1;37m      【     PROMINEX     】\033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;31m ───────────────────────────────────────\033[1;33m"
 echo -e "\033[1;37m › Linux Dist:	$distribution › Version: $os_version\033[0m"
@@ -945,7 +945,7 @@ function badvpnmenu(){
 clear
 if [[ $1 == "" ]]
 then
-figlet -p -f slant < /root/name
+toilet  -f future --filter border:metal [  .         PROMINEX         .  ]
 echo -e "\033[1;37m      【     PROMINEX     】\033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;31m ───────────────────────────────────────\033[1;33m"
 echo -e "\033[1;37m › Linux Dist:	$distribution › Version: $os_version\033[0m"
@@ -985,7 +985,7 @@ case $opcao in
 clear
 if [[ $1 == "" ]]
 then
-figlet -p -f smslant < /root/name
+toilet  -f future --filter border:metal [  .         PROMINEX         .  ]
 echo -e "\033[1;37m      【     PROMINEX     】\033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;31m ───────────────────────────────────────\033[1;33m"
 echo -e "\033[1;37m › Linux Dist: $distribution \033[0m"
