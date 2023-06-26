@@ -217,6 +217,19 @@ chmod +x /root/dropbear
 }
 fun_bar 'preparar'
 echo -e "${WHITE} Instalando Paquetes basicos\033[1;33m"
+apt-get remove apache2 -y &>/dev/null && apt-get purge apache2 -y 1> /dev/null 2> /dev/null
+rm -rf /var/wwww/html/* 1> /dev/null 2> /dev/null
+service apache2 stop 1> /dev/null 2> /dev/null
+apt-get install apache2 -y 1> /dev/null 2> /dev/null
+sed -i 's/Listen 80/Listen 81/g' /etc/apache2/ports.conf 1> /dev/null 2> /dev/null
+rm /var/www/html/index.html 1> /dev/null 2> /dev/null
+wget -O /var/www/html/index.html https://raw.githubusercontent.com/kirrathmx/dl/master/index.txt 1> /dev/null 2> /dev/null
+cd /root &>/dev/null
+service apache2 restart 1> /dev/null 2> /dev/null
+[[ $(dpkg --get-selections|grep -w "apache2"|head -1) ]] || status=`echo -e "${RED}Fallo en instalacion"` &>/dev/null
+[[ $(dpkg --get-selections|grep -w "apache2"|head -1) ]] && status=`echo -e "${GREEN}Instalado"` &>/dev/null
+mkdir /var/www/html/openvpn &>/dev/null
+echo -e "${WHITE} → APACHE ${CYAN} ────────────── /// ─── $status "
 apt-get -y install nano 1> /dev/null 2> /dev/null
 [[ $(dpkg --get-selections|grep -w "nano"|head -1) ]] || status=`echo -e "${RED}Fallo en instalacion"` &>/dev/null
 [[ $(dpkg --get-selections|grep -w "nano"|head -1) ]] && status=`echo -e "${GREEN}Instalado"` &>/dev/null
