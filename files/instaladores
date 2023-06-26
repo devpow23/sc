@@ -482,7 +482,7 @@ echo -e "\033[1;33m → OSSH:\033[1;32m $osh \033[0m"
 echo -e "[\033[1;31m-\033[1;33m]\033[1;31m ───────────────────────────────────────\033[1;33m"
 echo -e " "
 echo -e "\033[1;33m DIRECTORIO DE ARCHIVOS:\033[1;32m /root/psi \033[0m"
-echo -e "\033[1;33m RUTA PUBLICA DE CONFIG GENERADA:\033[1;32m http://$ipserver:85/psi.txt \033[0m"
+echo -e "\033[1;33m RUTA PUBLICA DE CONFIG GENERADA:\033[1;32m http://$ipserver:81/psi.txt \033[0m"
 fi
 }
 function psiserver(){
