@@ -1019,7 +1019,7 @@ ${RED}[${CYAN}1${RED}]  ${RED}› ${WHITE}  BADVPN              ${RED}[${CYAN}2$
 ${RED}[${CYAN}3${RED}]  ${RED}› ${WHITE}  PYTHON SOURCES      ${RED}[${CYAN}4${RED}]  ${RED}› ${WHITE}  SHADOWSOCKS
 ${RED}[${CYAN}5${RED}]  ${RED}› ${WHITE}  DROPBEAR            ${RED}[${CYAN}6${RED}]  ${RED}› ${WHITE}  V2RAY (Original)
 ${RED}[${CYAN}7${RED}]  ${RED}› ${WHITE}  V2RAY (Custom)      ${RED}[${CYAN}8${RED}]  ${RED}› ${WHITE}  PSIPHON SERVER
-${RED}[${CYAN}9${RED}]  ${RED}› ${WHITE}  SLOWDNS              ${RED}[${CYAN}10${RED}]  ${RED}› ${WHITE} UDP HTTP CUSTOM 
+${RED}[${CYAN}9${RED}]  ${RED}› ${WHITE}  SLOWDNS             ${RED}[${CYAN}10${RED}]  ${RED}› ${WHITE} UDP HTTP CUSTOM 
 ${RED}[${CYAN}0${RED}]  ${RED}› ${WHITE}  REGRESAR                 \033[1;33m"
 echo -e "${WHITE}      ⋤⋥ Escriba una opcion:      \033[0m"
 read -p ": " opcao
