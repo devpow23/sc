@@ -37,7 +37,7 @@ start(){
 		return
 	fi
 
-	title 'SELECCIONA UN PERTO'
+	title 'SELECCIONA UN PUERTO'
     while [[ -z "${chekuser}" ]]; do
     	dport=$(shuf -i 82-150 -n 1)
     	chekuser=$(in_opcion -nama "Ingresa un puerto [def = ${dport}]")
