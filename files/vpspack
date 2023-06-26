@@ -467,7 +467,7 @@ case $opcao in
    vpspack;;
    esac
 }
-function checksuserx(){
+function checkuserx(){
 echo -e "A continuacion se ingresara al sistema de CHECKUSER"
 echo -e "Continuar?"
 while [[ ${yesno} != @(s|S|y|Y|n|N) ]]; do
