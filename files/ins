@@ -64,6 +64,8 @@ apt-get install python2 -y 1> /dev/null 2> /dev/null
 apt-get install toilet -y 1> /dev/null 2> /dev/null
 curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output /etc/VpsPackdir/get-pip.py 1> /dev/null 2> /dev/null
 python2 /etc/VpsPackdir/get-pip.py 1> /dev/null 2> /dev/null
+rm /etc/VpsPackdir/logo 2>/dev/null
+curl -o /etc/VpsPackdir/logo https://raw.githubusercontent.com/devpow23/sc/main/files/logo 1> /dev/null 2> /dev/null
 clear
 echo -e "${GRAY}[${RED}-${GRAY}]${CYAN} ───────────────── /// ────────────────── "
 toilet  -f future --filter border:metal [  .         PROMINEX         .  ]
