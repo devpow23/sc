@@ -112,7 +112,7 @@ if [[ ${newfile} = @(s|S) ]]; then
   cp ./$name.zip /home/vps/public_html/$name.zip 1> /dev/null 2> /dev/null
   echo "Archivo OVPN copiado a su carpeta publica de VPS"
   echo "El archivo se encontrara en :"
-  echo "http://$ip:85/openvpn/$name.zip"
+  echo "http://$ip:81/openvpn/$name.zip"
  fi
 
 		echo -e "\033[1;31mPRESIONE ENTER PARA CONTINUAR\033[0m"
