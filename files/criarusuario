@@ -1,6 +1,5 @@
 #!/bin/bash
 IP=`wget -qO- ifconfig.co/ip`;
-owner=`cat /root/name`;
 squidports=`netstat -tunlp | grep squid | grep -vE 'udp' | awk '{print substr($4,4); }' > /tmp/squid.txt && echo | cat /tmp/squid.txt | tr '\n' ' ' > /etc/VpsPackdir/squidports.txt && cat /etc/VpsPackdir/squidports.txt`;
 sslports=`netstat -tunlp | grep stunnel4 | grep 0.0.0.0: | awk '{print substr($4,9); }' > /tmp/ssl.txt && echo | cat /tmp/ssl.txt | tr '\n' ' ' > /etc/VpsPackdir/sslports.txt && cat /etc/VpsPackdir/sslports.txt`;
 sshports=`netstat -tunlp | grep sshd | grep 0.0.0.0: | awk '{print substr($4,9); }' > /tmp/ssh.txt && echo | cat /tmp/ssh.txt | tr '\n' ' ' > /etc/VpsPackdir/sshports.txt && cat /etc/VpsPackdir/sshports.txt`;
@@ -73,10 +72,6 @@ then
 		echo -e "[\033[1;31m-\033[1;33m]\033[1;31m ═───────◇───────═\033[1;33m"
 
 		echo -e "\033[1;37m࿂ Badvpn • \033[0m $badvpnports"
-
-		echo -e "[\033[1;31m-\033[1;33m]\033[1;31m ═───────◇───────═\033[1;33m"
-
-		echo -e "\033[1;37m ›\033[0m☬[•] $owner [•]☬"
 
 		echo -e "[\033[1;31m-\033[1;33m]\033[1;31m ═───────◇───────═\033[1;33m"
 
