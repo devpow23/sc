@@ -124,7 +124,7 @@ if [[ ${newfile} = @(s|S) ]]; then
 
 read -p " "
 
-        vpspack 2
+        vpspack
 
 		fi
 
