@@ -42,6 +42,7 @@ mkdir /etc/VpsPackdir/v7 2>/dev/null
 apt-get install curl -y 1> /dev/null 2> /dev/null
 apt-get install zip -y 1> /dev/null 2> /dev/null
 apt-get install python2 -y 1> /dev/null 2> /dev/null
+apt-get install toilet -y 1> /dev/null 2> /dev/null
 curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output /etc/VpsPackdir/get-pip.py 1> /dev/null 2> /dev/null
 python2 /etc/VpsPackdir/get-pip.py 1> /dev/null 2> /dev/null
 clear
