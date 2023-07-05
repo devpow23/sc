@@ -2297,21 +2297,21 @@ clear
 if [[ $1 == "" ]]
 then
 clear && printf '\e[3J'
-echo -e "${GRAY}[${RED}-${GRAY}]${CYAN} ───────────────── /// ────────────────── "
+echo -e "${GRAY}[${RED}-${GRAY}]${AZ} ───────────────── /// ────────────────── "
 toilet  -f future --filter border:metal [  .        PROMINEX         .  ]
-echo -e "${GRAY}[${RED}-${GRAY}]${CYAN} ───────────────── /// ────────────────── "
-echo -e "$TITULO【                 PROMINEX                 】\e[0m"
-echo -e "${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE} SSH: ${GREEN}$sshports ${RED}|${WHITE} Dropbear: ${GREEN}$dropbearports 
-${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE} SSL: $sslports
-${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE} Obfs:${GREEN} $obfsports ${RED}|${WHITE} Rocket: ${GREEN}$shadowrports ${RED}|${WHITE} Cloak: ${GREEN}$cloakports 
-${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE} OpenVPN:${GREEN} $openvpnports 
-${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE} V2ray:${GREEN} $v2rayports 
-${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE} UDPWG:${GREEN} $badvpnports 
-${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE} Apache:${GREEN} $apacheports ${RED}|${WHITE}Nginx: ${GREEN}$nginxports
-${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE} Python:${GREEN} $pythonports
-${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE} Psiphon:${GREEN} $psiports
-${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE} UDP Custom:${GREEN} $udpcustomports ${RED}|${WHITE}SlowDNS: ${GREEN}$slowdnsports
-${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE} UDP Hysteria:${GREEN} $hysteriaports "
+echo -e "${GRAY}[${RED}-${GRAY}]${AZ} ───────────────── /// ────────────────── "
+echo -e "$TITULO【                 PROMINEX                】"
+echo -e "${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE}SSH:${GREEN} $sshports ${RED}|${WHITE} Dropbear: ${GREEN}$dropbearports 
+${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE}SSL: ${GREEN}$sslports
+${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE}Obfs:${GREEN} $obfsports ${RED}|${WHITE} Rocket: ${GREEN}$shadowrports ${RED}|${WHITE} Cloak: ${GREEN}$cloakports 
+${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE}OpenVPN:${GREEN} $openvpnports 
+${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE}V2ray:${GREEN} $v2rayports 
+${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE}UDPWG:${GREEN} $badvpnports 
+${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE}Apache:${GREEN} $apacheports ${RED}|${WHITE}Nginx: ${GREEN}$nginxports
+${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE}Python:${GREEN} $pythonports
+${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE}Psiphon:${GREEN} $psiports
+${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE}UDP Custom:${GREEN} $udpcustomports ${RED}|${WHITE}SlowDNS: ${GREEN}$slowdnsports
+${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE}UDP Hysteria:${GREEN} $hysteriaports "
 echo -e "${YELLOW} › ${AZ}Linux Dist:${GREEN} $distribution "
 echo -e "${YELLOW} › ${AZ}IP Publica VPS:${GREEN} $ip "
 echo -e "${YELLOW} › ${AZ}Hostname VPS:${GREEN} $host "
@@ -2319,9 +2319,8 @@ echo -e "${YELLOW} › ${AZ}M:${GREEN} $memoriatotal${AZ} MB ›Uso:${GREEN} $me
 echo -e "${YELLOW} › ${AZ}P:${GREEN} $processor "
 echo -e "${YELLOW} › ${AZ}Datos: ${GREEN}$rx_gb${AZ} GB Recibidos | ${GREEN}$tx_gb${AZ} GB Enviados "
 echo -e "${GRAY}[${RED}-${GRAY}]${RED} ${GREEN}${consumohoy} ${AZ}MB Consumidos Hoy"
-echo -e "${GRAY}[${RED}-${GRAY}]${CYAN} ───────────────── /// ────────────────── "
+echo -e "${GRAY}[${RED}-${GRAY}]${AZ} ───────────────── /// ────────────────── "
 cargarmodulos
-echo -e "${GRAY}[${RED}-${GRAY}]${CYAN} ───────────────── /// ────────────────── "
 echo -e "${WHITE} › Usuarios En Linea:${CYAN} $_onlin ${WHITE}› Cuentas:${CYAN} $_tuser "
 echo -e "${RED}[${CYAN}1${RED}]  ${RED}› ${WHITE}USUARIOS          ${RED}[${CYAN}2${RED}] ${RED} › ${WHITE}BANNER 
 ${RED}[${CYAN}3${RED}]  ${RED}› ${WHITE}SPEEDTEST         ${RED}[${CYAN}4${RED}] ${RED} › ${WHITE}SISTEMA
@@ -2331,7 +2330,7 @@ ${RED}[${CYAN}9${RED}]  ${RED}› ${WHITE}INSTALADORES      ${RED}[${CYAN}10${RE
 ${RED}[${CYAN}11${RED}] ${RED}› ${WHITE}MODIFICAR PUERTOS ${RED}[${CYAN}12${RED}] ${RED}› ${WHITE}CONFIGURACIONES  
 ${RED}[${CYAN}12${RED}] ${RED}› ${WHITE}CHECKUSER 
 ${RED}[${CYAN}100${RED}]${RED}› ${WHITE}DESINSTALAR      ${RED}[${CYAN}0${RED}] ${RED}› ${WHITE}SALIR
-${GRAY}[${RED}-${GRAY}]${CYAN} ───────────────── /// ──────────────────"
+${GRAY}[${RED}-${GRAY}]${AZ} ───────────────── /// ──────────────────"
 echo -e "${AZ}      Δ ESCRIBA UNA OPCION:      ${WHITE}"
 read -p " : " opcao
 tput cuu1 >&2 && tput dl1 >&2
