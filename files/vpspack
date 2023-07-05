@@ -1976,7 +1976,7 @@ if [[ ${yesno} = @(s|S|y|Y) ]]; then
 verificaruser
 fi
 }
-function config(){
+function configuraciones(){
 clear
 if [[ $1 == "" ]]
 then
@@ -2329,7 +2329,7 @@ ${RED}[${CYAN}5${RED}]  ${RED}› ${WHITE}FIREWALL ON       ${RED}[${CYAN}6${RED
 ${RED}[${CYAN}7${RED}]  ${RED}› ${WHITE}PUERTOS TCP/IP    ${RED}[${CYAN}8${RED}] ${RED} › ${WHITE}HERRAMIENTAS
 ${RED}[${CYAN}9${RED}]  ${RED}› ${WHITE}INSTALADORES      ${RED}[${CYAN}10${RED}] ${RED}› ${WHITE}DESINSTALADORES
 ${RED}[${CYAN}11${RED}] ${RED}› ${WHITE}MODIFICAR PUERTOS ${RED}[${CYAN}12${RED}] ${RED}› ${WHITE}CONFIGURACIONES  
-${RED}[${CYAN}12${RED}] ${RED}› ${WHITE}CHECKUSER 
+${RED}[${CYAN}13${RED}] ${RED}› ${WHITE}CHECKUSER 
 ${RED}[${CYAN}100${RED}]${RED}› ${WHITE}DESINSTALAR      ${RED}[${CYAN}0${RED}] ${RED}› ${WHITE}SALIR
 ${GRAY}[${RED}-${GRAY}]${AZ} ─────────────────── /// ────────────────────"
 echo -e "${AZ}      Δ ESCRIBA UNA OPCION:      ${YELLOW}"
@@ -2361,7 +2361,9 @@ case $opcao in
    delpaq;;
   11)
    addport;;
-   12)
+  12)
+   configuraciones;;
+   13)
    checku;;
   100)
    rm -rf /bin/speedtest.py 2>/dev/null
