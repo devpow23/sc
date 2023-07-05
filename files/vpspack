@@ -2300,7 +2300,7 @@ clear && printf '\e[3J'
 echo -e "${GRAY}[${RED}-${GRAY}]${AZ} ─────────────────── /// ──────────────────── "
 toilet  -f future --filter border:metal [  .        │PROMINEX│        .  ]
 echo -e "${GRAY}[${RED}-${GRAY}]${AZ} ─────────────────── /// ──────────────────── "
-echo -e "${TITULO}│                   PROMINEX                  │"
+echo -e " ${TITULO}│                   PROMINEX                  │"
 echo -e "${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE}SSH:${GREEN} $sshports ${RED}|${WHITE} Dropbear: ${GREEN}$dropbearports 
 ${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE}SSL: ${GREEN}$sslports
 ${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE}Obfs:${GREEN} $obfsports ${RED}|${WHITE} Rocket: ${GREEN}$shadowrports ${RED}|${WHITE} Cloak: ${GREEN}$cloakports 
@@ -2312,6 +2312,7 @@ ${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE}Python:${GREEN} $pythonports
 ${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE}Psiphon:${GREEN} $psiports
 ${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE}UDP Custom:${GREEN} $udpcustomports ${RED}|${WHITE}SlowDNS: ${GREEN}$slowdnsports
 ${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE}UDP Hysteria:${GREEN} $hysteriaports "
+echo -e "${GRAY}[${RED}-${GRAY}]${AZ} ─────────────────── /// ──────────────────── "
 echo -e "${YELLOW} › ${AZ}Linux Dist:${GREEN} $distribution "
 echo -e "${YELLOW} › ${AZ}IP Publica VPS:${GREEN} $ip "
 echo -e "${YELLOW} › ${AZ}Hostname VPS:${GREEN} $host "
@@ -2322,7 +2323,6 @@ echo -e "${YELLOW} › ${AZ}MB Consumidos Hoy: ${GREEN}${consumohoy}"
 echo -e "${GRAY}[${RED}-${GRAY}]${AZ} ─────────────────── /// ──────────────────── "
 cargarmodulos
 echo -e "${WHITE} › Usuarios En Linea:${CYAN} $_onlin ${WHITE}› Cuentas:${CYAN} $_tuser "
-echo -e "${GRAY}[${RED}-${GRAY}]${AZ} ─────────────────── /// ──────────────────── "
 echo -e "${RED}[${CYAN}1${RED}]  ${RED}› ${WHITE}USUARIOS          ${RED}[${CYAN}2${RED}] ${RED} › ${WHITE}BANNER 
 ${RED}[${CYAN}3${RED}]  ${RED}› ${WHITE}SPEEDTEST         ${RED}[${CYAN}4${RED}] ${RED} › ${WHITE}SISTEMA
 ${RED}[${CYAN}5${RED}]  ${RED}› ${WHITE}FIREWALL ON       ${RED}[${CYAN}6${RED}] ${RED} › ${WHITE}FIREWALL OFF
@@ -2332,7 +2332,7 @@ ${RED}[${CYAN}11${RED}] ${RED}› ${WHITE}MODIFICAR PUERTOS ${RED}[${CYAN}12${RE
 ${RED}[${CYAN}12${RED}] ${RED}› ${WHITE}CHECKUSER 
 ${RED}[${CYAN}100${RED}]${RED}› ${WHITE}DESINSTALAR      ${RED}[${CYAN}0${RED}] ${RED}› ${WHITE}SALIR
 ${GRAY}[${RED}-${GRAY}]${AZ} ─────────────────── /// ────────────────────"
-echo -e "${AZ}      Δ ESCRIBA UNA OPCION:      ${WHITE}"
+echo -e "${AZ}      Δ ESCRIBA UNA OPCION:      ${YELLOW}"
 read -p " : " opcao
 tput cuu1 >&2 && tput dl1 >&2
 else
