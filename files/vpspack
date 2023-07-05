@@ -12,6 +12,7 @@ CYAN='\033[0;36m'
 GRAY='\033[0;37m'
 WHITE='\033[0;37m'
 AZ='\033[0;94m'
+TITULO='\e[44;97m'
 # Definir variables para colores de fondo
 BG_RED='\033[0;41m'
 BG_GREEN='\033[0;42m'
@@ -2298,14 +2299,14 @@ clear && printf '\e[3J'
 echo -e "${GRAY}[${RED}-${GRAY}]${CYAN} ───────────────── /// ────────────────── "
 toilet  -f future --filter border:metal [  .        PROMINEX         .  ]
 echo -e "${GRAY}[${RED}-${GRAY}]${CYAN} ───────────────── /// ────────────────── "
-echo -e "\e[44;97m 【                PROMINEX                 】 \e[0m"
+echo -e "$TITULO【                 PROMINEX                 】\e[0m"
 echo -e "${YELLOW} › ${AZ}Linux Dist:${GREEN} $distribution "
 echo -e "${YELLOW} › ${AZ}IP Publica VPS:${GREEN} $ip "
 echo -e "${YELLOW} › ${AZ}Hostname VPS:${GREEN} $host "
 echo -e "${YELLOW} › ${AZ}M:${GREEN} $memoriatotal${AZ} MB ›Uso:${GREEN} $memoriauso${AZ} MB ›Libre:${GREEN} $memorialibre ${AZ}MB "
-echo -e "${YELLOW} › ${AZ}P:${WHITE} $processor "
+echo -e "${YELLOW} › ${AZ}P:${GREEN} $processor "
 echo -e "${YELLOW} › ${AZ}Datos: ${GREEN}$rx_gb${AZ} GB Recibidos | ${GREEN}$tx_gb${AZ} GB Enviados "
-echo -e "${GRAY}[${RED}-${GRAY}]${RED} ${GREEN}${consumohoy} ${WHITE}MB Consumidos Hoy"
+echo -e "${GRAY}[${RED}-${GRAY}]${RED} ${GREEN}${consumohoy} ${AZ}MB Consumidos Hoy"
 echo -e "${GRAY}[${RED}-${GRAY}]${CYAN} ───────────────── /// ────────────────── "
 cargarmodulos
 echo -e "${GRAY}[${RED}-${GRAY}]${CYAN} ───────────────── /// ────────────────── "
@@ -2319,7 +2320,7 @@ ${RED}[${CYAN}11${RED}] ${RED}› ${WHITE}MODIFICAR PUERTOS ${RED}[${CYAN}12${RE
 ${RED}[${CYAN}12${RED}] ${RED}› ${WHITE}CHECKUSER 
 ${RED}[${CYAN}100${RED}]${RED}› ${WHITE}DESINSTALAR      ${RED}[${CYAN}0${RED}] ${RED}› ${WHITE}SALIR
 ${GRAY}[${RED}-${GRAY}]${CYAN} ───────────────── /// ──────────────────"
-echo -e "\033[0;37m      Δ ESCRIBA UNA OPCION:      \033[0m"
+echo -e "${AZ}      Δ ESCRIBA UNA OPCION:      ${WHITE}"
 read -p " : " opcao
 tput cuu1 >&2 && tput dl1 >&2
 else
