@@ -35,7 +35,7 @@ then
 		cat /etc/VpsPackdir/logo
 		echo -e " "
 		echo -e "[\033[1;31m-\033[1;33m]\033[1;31m ═───────◇───────═\033[1;33m"
-		echo -e "\033[1;37m      【     ★ VPSPack ★     】\033[0m"
+		echo -e "\033[1;37m      【      PROMINEX      】\033[0m"
 		echo -e "[\033[1;31m-\033[1;33m]\033[1;31m ═───────◇───────═\033[1;33m"
 
 		echo -e "\033[1;31mᗚ Usuario • ๛ \033[0m $token"
