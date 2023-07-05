@@ -2303,15 +2303,15 @@ echo -e "${GRAY}[${RED}-${GRAY}]${CYAN} ─────────────�
 echo -e "$TITULO【                 PROMINEX                 】\e[0m"
 echo -e "${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE} SSH: ${GREEN}$sshports ${RED}|${WHITE} Dropbear: ${GREEN}$dropbearports 
 ${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE} SSL: $sslports
-${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE} Obfs: ${GREEN$obfsports ${RED}|${WHITE} Rocket: ${GREEN}$shadowrports ${RED}|${WHITE} Cloak: ${GREEN}$cloakports 
-${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE} OpenVPN: ${GREEN}$openvpnports 
-${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE} V2ray: ${GREEN}$v2rayports 
-${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE} UDPWG: ${GREEN}$badvpnports 
-${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE} Apache: ${GREEN}$apacheports ${RED}|${WHITE}Nginx: ${GREEN}$nginxports
-${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE} Python: ${GREEN}$pythonports
-${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE} Psiphon: ${GREEN}$psiports
-${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE} UDP Custom: ${GREEN}$udpcustomports ${RED}|${WHITE}SlowDNS: ${GREEN}$slowdnsports
-${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE} UDP Hysteria: ${GREEN}$hysteriaports "
+${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE} Obfs:${GREEN} $obfsports ${RED}|${WHITE} Rocket: ${GREEN}$shadowrports ${RED}|${WHITE} Cloak: ${GREEN}$cloakports 
+${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE} OpenVPN:${GREEN} $openvpnports 
+${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE} V2ray:${GREEN} $v2rayports 
+${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE} UDPWG:${GREEN} $badvpnports 
+${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE} Apache:${GREEN} $apacheports ${RED}|${WHITE}Nginx: ${GREEN}$nginxports
+${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE} Python:${GREEN} $pythonports
+${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE} Psiphon:${GREEN} $psiports
+${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE} UDP Custom:${GREEN} $udpcustomports ${RED}|${WHITE}SlowDNS: ${GREEN}$slowdnsports
+${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE} UDP Hysteria:${GREEN} $hysteriaports "
 echo -e "${YELLOW} › ${AZ}Linux Dist:${GREEN} $distribution "
 echo -e "${YELLOW} › ${AZ}IP Publica VPS:${GREEN} $ip "
 echo -e "${YELLOW} › ${AZ}Hostname VPS:${GREEN} $host "
