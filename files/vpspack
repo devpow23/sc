@@ -1939,6 +1939,44 @@ echo -e "\033[1;31mINSTALACION FINALIZADA - PRESIONE ENTER\033[0m"
 read -p " "
 vpspack
 }
+function checku(){
+clear
+if [[ $1 == "" ]]
+then
+toilet  -f future --filter border:metal [  .         PROMINEX         .  ]
+echo -e "\033[1;37m      【     PROMINEX     】\033[0m"
+echo -e "[\033[1;31m-\033[1;33m]\033[1;32m ───────────────── /// ─────────────────\033[1;33m"
+echo -e "\033[1;37m › Linux Dist:	$distribution › Version: $os_version\033[0m"
+echo -e "\033[1;37m › IP VPS:       $ip \033[0m"
+echo -e "[\033[1;31m-\033[1;33m]\033[1;32m ───────────────── /// ─────────────────\033[1;33m"
+echo -e "\033[1;37m       Script @ CHECKUSER \033[0m"
+echo -e "[\033[1;31m-\033[1;33m]\033[1;31m ───────────────── /// ─────────────────\033[1;33m"
+echo -e "\033[1;37mSeleccione una opcion:    Para Salir Ctrl + C\033[1;33m
+[\033[1;32m1\033[1;33m] CHECKUSER
+[\033[1;32m0\033[1;33m] < REGRESAR                 \033[1;33m"
+read -p ": " opcao
+else
+opcao=$1
+fi
+case $opcao in
+  1)
+   checkus;;
+  0)
+   vpspack;;
+   esac
+}
+function checkus(){
+echo -e "\033[1;33m Entrar al Menu de CHECKUSER?\033[0m"
+echo -e "\033[1;33m Continuar?\033[0m"
+while [[ ${yesno} != @(s|S|y|Y|n|N) ]]; do
+read -p "[S/N]: " yesno
+tput cuu1 && tput dl1
+done
+if [[ ${yesno} = @(s|S|y|Y) ]]; then
+cd /etc/VpsPackdir
+bash c.sh
+fi
+}
 function config(){
 clear
 if [[ $1 == "" ]]
@@ -2281,6 +2319,7 @@ ${RED}[${CYAN}5${RED}]  ${RED}› ${WHITE}FIREWALL ON       ${RED}[${CYAN}6${RED
 ${RED}[${CYAN}7${RED}]  ${RED}› ${WHITE}PUERTOS TCP/IP    ${RED}[${CYAN}8${RED}] ${RED} › ${WHITE}HERRAMIENTAS
 ${RED}[${CYAN}9${RED}]  ${RED}› ${WHITE}INSTALADORES      ${RED}[${CYAN}10${RED}] ${RED}› ${WHITE}DESINSTALADORES
 ${RED}[${CYAN}11${RED}] ${RED}› ${WHITE}MODIFICAR PUERTOS ${RED}[${CYAN}12${RED}] ${RED}› ${WHITE}CONFIGURACIONES  
+${RED}[${CYAN}12${RED}] ${RED}› ${WHITE}CHECKUSER 
 ${RED}[${CYAN}100${RED}]${RED}› ${WHITE}DESINSTALAR      ${RED}[${CYAN}0${RED}] ${RED}› ${WHITE}SALIR
 ${GRAY}[${RED}-${GRAY}]${CYAN} ───────────────── /// ──────────────────"
 echo -e "\033[0;37m      Δ ESCRIBA UNA OPCION:      \033[0m"
@@ -2313,17 +2352,7 @@ case $opcao in
   11)
    addport;;
    12)
-   config;;
-   13)
-   administradorprocesos;;
-   root)
-   chgroot;;
-   reboot)
-   rebootvps;;
-   usuario)
-   crearusuario;;
-   puertosvps)
-   puertosvps;;
+   checku;;
   100)
    rm -rf /bin/speedtest.py 2>/dev/null
    rm -rf /bin/deletarusuario 2>/dev/null
