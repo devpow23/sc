@@ -2297,9 +2297,9 @@ clear
 if [[ $1 == "" ]]
 then
 clear && printf '\e[3J'
-echo -e "${GRAY}[${RED}-${GRAY}]${AZ} ───────────────── /// ────────────────── "
-toilet  -f future --filter border:metal [  .        PROMINEX        .  ]
-echo -e "${GRAY}[${RED}-${GRAY}]${AZ} ───────────────── /// ────────────────── "
+echo -e "${GRAY}[${RED}-${GRAY}]${AZ} ────────────────── /// ─────────────────── "
+toilet  -f future --filter border:metal [  .        │PROMINEX│        .  ]
+echo -e "${GRAY}[${RED}-${GRAY}]${AZ} ────────────────── /// ─────────────────── "
 echo -e "${TITULO}│                 PROMINEX                │"
 echo -e "${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE}SSH:${GREEN} $sshports ${RED}|${WHITE} Dropbear: ${GREEN}$dropbearports 
 ${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE}SSL: ${GREEN}$sslports
@@ -2318,8 +2318,8 @@ echo -e "${YELLOW} › ${AZ}Hostname VPS:${GREEN} $host "
 echo -e "${YELLOW} › ${AZ}M:${GREEN} $memoriatotal${AZ} MB ›Uso:${GREEN} $memoriauso${AZ} MB ›Libre:${GREEN} $memorialibre ${AZ}MB "
 echo -e "${YELLOW} › ${AZ}P:${GREEN} $processor "
 echo -e "${YELLOW} › ${AZ}Datos: ${GREEN}$rx_gb${AZ} GB Recibidos | ${GREEN}$tx_gb${AZ} GB Enviados "
-echo -e "${GRAY}[${RED}-${GRAY}]${RED} ${GREEN}${consumohoy} ${AZ}MB Consumidos Hoy"
-echo -e "${GRAY}[${RED}-${GRAY}]${AZ} ───────────────── /// ────────────────── "
+echo -e "${YELLOW} › ${AZ}MB Consumidos Hoy: ${GREEN}${consumohoy}"
+echo -e "${GRAY}[${RED}-${GRAY}]${AZ} ────────────────── /// ─────────────────── "
 cargarmodulos
 echo -e "${WHITE} › Usuarios En Linea:${CYAN} $_onlin ${WHITE}› Cuentas:${CYAN} $_tuser "
 echo -e "${RED}[${CYAN}1${RED}]  ${RED}› ${WHITE}USUARIOS          ${RED}[${CYAN}2${RED}] ${RED} › ${WHITE}BANNER 
@@ -2330,7 +2330,7 @@ ${RED}[${CYAN}9${RED}]  ${RED}› ${WHITE}INSTALADORES      ${RED}[${CYAN}10${RE
 ${RED}[${CYAN}11${RED}] ${RED}› ${WHITE}MODIFICAR PUERTOS ${RED}[${CYAN}12${RED}] ${RED}› ${WHITE}CONFIGURACIONES  
 ${RED}[${CYAN}12${RED}] ${RED}› ${WHITE}CHECKUSER 
 ${RED}[${CYAN}100${RED}]${RED}› ${WHITE}DESINSTALAR      ${RED}[${CYAN}0${RED}] ${RED}› ${WHITE}SALIR
-${GRAY}[${RED}-${GRAY}]${AZ} ───────────────── /// ──────────────────"
+${GRAY}[${RED}-${GRAY}]${AZ} ────────────────── /// ───────────────────"
 echo -e "${AZ}      Δ ESCRIBA UNA OPCION:      ${WHITE}"
 read -p " : " opcao
 tput cuu1 >&2 && tput dl1 >&2
