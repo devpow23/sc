@@ -2298,7 +2298,7 @@ if [[ $1 == "" ]]
 then
 clear && printf '\e[3J'
 echo -e "${GRAY}[${RED}-${GRAY}]${AZ} ───────────────── /// ────────────────── "
-toilet  -f future --filter border:metal [  .        PROMINEX         .  ]
+toilet  -f future --filter border:metal [  .   .     PROMINEX     .    .  ]
 echo -e "${GRAY}[${RED}-${GRAY}]${AZ} ───────────────── /// ────────────────── "
 echo -e "$TITULO【                 PROMINEX                】"
 echo -e "${RED}[${CYAN}-${RED}]  ${RED}› ${WHITE}SSH:${GREEN} $sshports ${RED}|${WHITE} Dropbear: ${GREEN}$dropbearports 
