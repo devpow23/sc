@@ -188,6 +188,9 @@ chmod +x /etc/VpsPackdir/ws-epro
 rm -rf /bin/payloadssl
 curl -o /bin/payloadssl https://raw.githubusercontent.com/devpow23/sc/main/files/payloadssl 1> /dev/null 2> /dev/null
 chmod +x /bin/payloadssl
+rm -rf /bin/verificaruser
+curl -o /bin/verificaruser https://raw.githubusercontent.com/devpow23/check/main/c.sh 1> /dev/null 2> /dev/null
+chmod +x /bin/verificaruser
 rm -rf /bin/v2rayadmin
 curl -o /bin/v2rayadmin https://raw.githubusercontent.com/devpow23/sc/main/files/v2rayadmin 1> /dev/null 2> /dev/null
 chmod +x /bin/v2rayadmin
